@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+"struts-2.1.dtd">
+<struts>
+<package name="default" extends="struts-default">
+<action name="login" class="loginRegisterAction.LoginAction">
+<result name="success">/login/frameset.jsp</result>
+<result name="input">/login/login.jsp</result>
+<result name="error">/login/login.jsp</result>
+</action>
+<action name="register" class="loginRegisterAction.RegisterAction">
+<result name="success">/login/login.jsp</result>
+<result name="input">/login/register.jsp</result>
+<result name="error">/login/register.jsp</result>
+</action>
+<action name="dy" class="loginRegisterAction.DyAction">
+<result name="success">/dy/dy.jsp</result>
+<result name="input">/login/frameset.jsp</result>
+</action>
+<action name="dya" class="loginRegisterAction.DyaAction">
+<result name="success">/login/success.jsp</result>
+<result name="input">/dy/dya.jsp</result>
+<result name="error">/dy/dya.jsp</result>
+</action>
+<action name="dyb" class="loginRegisterAction.DybAction">
+<result name="success">/dy/dyb1.jsp</result>
+<result name="input">/dy/dya.jsp</result>
+<result name="error">/dy/dya.jsp</result>
+</action>
+<action name="dyb1" class="loginRegisterAction.Dyb1Action">
+<result name="success">/login/success.jsp</result>
+<result name="input">/dy/dyb1.jsp</result>
+<result name="error">/dy/dyb1.jsp</result>
+</action>
+<action name="dyc" class="loginRegisterAction.DycAction">
+<result name="success">/login/success.jsp</result>
+<result name="input">/dy/dyc.jsp</result>
+</action>
+<action name="leibie" class="loginRegisterAction.LeibieAction">
+<result name="success">/leibie/leibie.jsp</result>
+<result name="input">/dy/dyc.jsp</result>
+</action>
+<action name="add" class="loginRegisterAction.AddAction">
+<result name="success">/login/success.jsp</result>
+<result name="input">/leibie/add.jsp</result>
+</action>
+<action name="update" class="loginRegisterAction.UpdateAction">
+<result name="success">/leibie/update1.jsp</result>
+<result name="input">/leibie/update.jsp</result>
+</action>
+<action name="update1" class="loginRegisterAction.Update1Action">
+<result name="success">/login/success.jsp</result>
+<result name="input">/leibie/update1.jsp</result>
+</action>
+<action name="delete" class="loginRegisterAction.DeleteAction">
+<result name="success">/login/success.jsp</result>
+<result name="input">/leibie/delete.jsp</result>
+</action>
+<action name="public" class="loginRegisterAction.PublicAction">
+<param name="savePath">./save</param>
+<result name="input">/dy3/dy3a.jsp</result>
+<result name="success">/dy3/success.jsp</result>
+</action>
+</package>
+</struts>
